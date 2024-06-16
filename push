@@ -8,9 +8,7 @@ else
     COMMIT_MESSAGE="$1"
 fi
 
-npm run build
-
-cd ..
+# npm run build
 
 git add .
 git commit -m "$COMMIT_MESSAGE"
