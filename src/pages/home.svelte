@@ -10,8 +10,8 @@
       {#if mobile()}
         <Link iconIos="f7:menu" iconMd="material:menu" panelOpen="left" />
       {:else}
-        {#each pages as p}
-          {p.name}
+        {#each pages.filter(item=>item.path!="/" && item.path!="(.*)") as p}
+          <Block strong inset>{p.name}</Block>
         {/each}
       {/if}
     </NavRight>
