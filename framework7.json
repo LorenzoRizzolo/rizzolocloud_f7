@@ -1,0 +1,26 @@
+{
+  "cwd": "/home/maverick/rizzolocloud_f7",
+  "type": [
+    "pwa",
+    "capacitor"
+  ],
+  "name": "RizzoloCloud",
+  "framework": "svelte",
+  "template": "split-view",
+  "bundler": "vite",
+  "cssPreProcessor": "less",
+  "theming": {
+    "customColor": true,
+    "color": "#00dff1",
+    "darkMode": true,
+    "iconFonts": true
+  },
+  "customBuild": false,
+  "pkg": "io.framework7.myapp",
+  "capacitor": {
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  }
+}
