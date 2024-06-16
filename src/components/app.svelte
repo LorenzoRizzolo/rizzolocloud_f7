@@ -8,6 +8,12 @@
   <View main class="safe-areas" url="/" />
 
 </App>
+
+
+<!-- background -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.globe.min.js"></script> -->
+
 <script>
   import { onMount } from 'svelte';
   import { getDevice }  from 'framework7/lite-bundle';
@@ -34,9 +40,9 @@
   // Framework7 Parameters
   let f7params = {
     name: 'RizzoloCloud', // App name
-    theme: 'auto', // Automatic theme detection
+    theme: 'md', // Automatic theme detection
     colors: {
-      primary: '#00dff1',
+      primary: '#00ffdd',
     },
     darkMode: true,
 
@@ -60,6 +66,7 @@
       androidOverlaysWebView: false,
     },
   };
+  
   onMount(() => {
     f7ready(() => {
       if (f7.device.capacitor) {

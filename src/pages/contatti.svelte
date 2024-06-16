@@ -17,13 +17,14 @@
             </div>
           {/each}
         </div>
-
+        
       {/if}
   </Navbar>
 
   <Block>
     <center>
-      <h1 class="title_font">Rizzolo Cloud</h1>
+      <h1 style="margin-bottom: 0;" class="title_font">Rizzolo Cloud</h1>
+      <h2 class="title_font margin_0">Contatti</h2>
     </center>
   </Block>
 
@@ -31,18 +32,6 @@
     <BlockTitle>Cos'è RizzoloCloud?</BlockTitle>
     RizzoloCloud aiuta le aziende a creare portali tecnologici, all'avanguardia e funzionali utilizzando le tecnologie più recenti e sfruttando
     la potenza e la comodità di un'infrastruttura totalmente cloud.
-  </Block>
-
-  <Block strong inset class="pc_center pc_l_width">
-    <BlockTitle>Come posso richiedere una consulenza?</BlockTitle>
-  </Block>
-
-  <Block strong inset class="pc_center pc_l_width">
-    <BlockTitle>Quali vantaggi mi offre RizzoloCloud?</BlockTitle>
-  </Block>
-
-  <Block strong inset class="pc_center pc_l_width">
-    <BlockTitle>Cos'è il cloud e quali vantaggi mi offre?</BlockTitle>
   </Block>
 
 
@@ -63,10 +52,9 @@
   import pages from "../js/routes"
 
   let page = {
-    name:"Home",
-    path:"/"
+    name:"contatti",
+    path:"/contatti/"
   }
-
 </script>
 
 <style>

@@ -7,8 +7,8 @@
           </NavLeft>
         </Navbar>
         <List>
-          {#each pages.filter(item=>item.path!="/" && item.path!="(.*)") as p}
-            <ListItem tabLink link title={p.name} view=".view-main" panelClose/>
+          {#each pages.filter(item=>item.path!="(.*)") as p}
+            <ListItem tabLink link={p.path} title={p.name} view=".view-main" panelClose/>
           {/each}
         </List>
       </Page>
@@ -20,9 +20,7 @@
         Panel, 
         View,
         NavLeft,
-        Link,
         Page,
-        BlockTitle,
         Navbar,
         List,
         ListItem
