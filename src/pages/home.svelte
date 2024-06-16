@@ -2,16 +2,18 @@
   <!-- Top Navbar -->
   <Navbar>
     <NavLeft>
-      <NavLeft>
-        {#if mobile()}
-          <center>
-            <img src="/icons/favicon.png" alt="logo">
-          </center>
-        {/if}
-      </NavLeft>
+      <center>
+        <img src="/icons/favicon.png" alt="logo">
+      </center>
     </NavLeft>
     <NavRight>
-      <Link iconIos="f7:menu" iconMd="material:menu" panelOpen="left" />
+      {#if mobile()}
+        <Link iconIos="f7:menu" iconMd="material:menu" panelOpen="left" />
+      {:else}
+        {#each pages as p}
+          {p.name}
+        {/each}
+      {/if}
     </NavRight>
   </Navbar>
 
@@ -53,6 +55,7 @@
     Link
   } from 'framework7-svelte';
   import { mobile } from "../js/functions"
+  import pages from "../js/routes"
 </script>
 
 <style>
