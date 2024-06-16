@@ -1,6 +1,8 @@
 <App { ...f7params }>
 
-  <LeftPanel/>
+  {#if mobile()}
+    <LeftPanel/>
+  {/if}
 
   <!-- Your main view, should have "view-main" class -->
   <View main class="safe-areas" url="/" />
@@ -22,6 +24,7 @@
     ListItem
   } from 'framework7-svelte';
   import LeftPanel from './panel.svelte';
+  import { mobile } from '../js/functions';
 
   import capacitorApp from '../js/capacitor-app';
   import routes from '../js/routes';

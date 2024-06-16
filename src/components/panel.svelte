@@ -1,4 +1,4 @@
-<Panel left dark visibleBreakpoint={960}>
+<Panel left reveal={!mobile()} dark visibleBreakpoint={960}>
     <View>
       <Page>
         <Navbar>
@@ -6,10 +6,10 @@
             <img src="/icons/favicon.png" alt="">
           </NavLeft>
         </Navbar>
-        <BlockTitle>Pages</BlockTitle>
         <List>
-          <ListItem link title="Left Page 1"/>
-          <ListItem link title="Left Page 2"/>
+          {#each pages.filter(item=>item.path!="/" && item.path!="(.*)") as p}
+            <ListItem tabLink link title={p.name} view=".view-main" panelClose/>
+          {/each}
         </List>
       </Page>
     </View>
@@ -27,4 +27,6 @@
         List,
         ListItem
     } from "framework7-svelte";
+    import { mobile } from "../js/functions";
+    import pages from "../js/routes"
 </script>
