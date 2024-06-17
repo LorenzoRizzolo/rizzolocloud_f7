@@ -40,8 +40,6 @@
       RizzoloCloud sviluppa applicazioni web che sono compatibili con ogni sistema operativo in formato di applicazione oppure direttamente dal browser.
     </Block>
   
-  
-  
   </Page>
   <script>
     let page = {
