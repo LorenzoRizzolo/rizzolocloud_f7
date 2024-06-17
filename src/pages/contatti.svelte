@@ -1,25 +1,4 @@
 <Page name={page.name}>
-  <!-- Top Navbar -->
-  <Navbar>
-    <NavLeft>
-      <center>
-        <img src="/icons/favicon.png" alt="logo">
-      </center>
-    </NavLeft>
-      {#if mobile()}
-        <Link iconIos="f7:menu" iconMd="material:menu" panelOpen="left" />
-      {:else}
-
-        <div class="routes">
-          {#each pages.filter(item=>item.path!=page.path && item.path!="(.*)") as p}
-            <div class="route" on:click={()=>{f7.views.main.router.navigate(p.path)}}>
-              {p.name}
-            </div>
-          {/each}
-        </div>
-        
-      {/if}
-  </Navbar>
 
   <Block>
     <center>

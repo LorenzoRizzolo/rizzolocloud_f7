@@ -1,4 +1,27 @@
 <App { ...f7params }>
+  <!-- Top Navbar -->
+  <Navbar>
+    <NavLeft>
+      <center>
+        <img src="/icons/favicon.png" alt="logo">
+      </center>
+    </NavLeft>
+      {#if !mobile()}
+        <div class="routes">
+          {#each pages.filter(item=>item.path!="(.*)") as p}
+            <div class="route" on:click={()=>{f7.views.main.router.navigate(p.path)}}>
+              {p.name}
+            </div>
+          {/each}
+        </div>
+      {/if}
+
+      <NavRight>
+        {#if mobile()}
+          <Link iconIos="f7:menu" iconMd="material:menu" panelOpen="left" />
+        {/if}
+      </NavRight>
+  </Navbar>
 
   {#if mobile()}
     <LeftPanel/>
@@ -25,12 +48,16 @@
     View,
     Page,
     Navbar,
+    NavLeft,
+    NavRight,
+    Link,
     BlockTitle,
     List,
     ListItem
   } from 'framework7-svelte';
   import LeftPanel from './panel.svelte';
   import { mobile } from '../js/functions';
+  import pages from "../js/routes"
 
   import capacitorApp from '../js/capacitor-app';
   import routes from '../js/routes';

@@ -8,6 +8,9 @@
 }
 
 
+.routes{
+    display: flex;
+}
 .route{
     background-color: var(--f7-block-strong-bg-color);
     margin: 10px;
