@@ -22,6 +22,10 @@
     font-size: 120%;
 }
 
+.link{
+    color: var(--f7-theme-color);
+}
+
 .margin_0{
     margin: 0 !important;
 }
