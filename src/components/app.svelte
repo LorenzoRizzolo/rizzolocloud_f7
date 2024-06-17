@@ -8,8 +8,8 @@
     </NavLeft>
       {#if !mobile()}
         <div class="routes">
-          {#each pages.filter(item=>item.path!="(.*)") as p}
-            <div class="route" on:click={()=>{f7.views.main.router.navigate(p.path)}}>
+          {#each pages.filter(item=>item.path!="(.*)" && item.path!=$page) as p}
+            <div class="route" on:click={()=>{f7.views.main.router.navigate(p.path); $page=p.path}}>
               {p.name}
             </div>
           {/each}
@@ -61,7 +61,7 @@
 
   import capacitorApp from '../js/capacitor-app';
   import routes from '../js/routes';
-  import store from '../js/store';
+  import { page } from "../js/store"
 
   const device = getDevice();
   // Framework7 Parameters
@@ -72,9 +72,6 @@
       primary: '#00ffdd',
     },
     darkMode: true,
-
-    // App store
-    store: store,
     // App routes
     routes: routes,
 
