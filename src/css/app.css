@@ -25,6 +25,14 @@
     font-size: 120%;
 }
 
+.my_button{
+    display: inline-block !important;
+}
+
+.block-footer{
+    text-align: right;
+}
+
 .link{
     color: var(--f7-theme-color);
 }

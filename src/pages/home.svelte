@@ -40,6 +40,10 @@
     <BlockTitle>Quali vantaggi mi offre RizzoloCloud?</BlockTitle>
     RizzoloCloud ti offre le tecnologie Web più moderne e accessibili, il supporto in cloud, applicazioni per mobile, tablet, pc e web. 
     Avrai sempre tutto a portata di mano ovunque ti trovi e con assistenza sempre presente.
+
+    <BlockFooter>
+      <Button on:click={()=>{f7.views.main.router.navigate("/contatti/"); $current_page="/contatti/"}} tonal class="my_button">Contatti <Icon material="keyboard_arrow_right"/></Button>
+    </BlockFooter>
   </Block>
 
   <Block strong inset class="pc_center pc_l_width">
@@ -59,13 +63,17 @@
     NavLeft,
     NavRight,
     NavTitle,
+    Icon,
     Block,
+    BlockFooter,
     BlockTitle,
     Link,
+    Button,
     f7
   } from 'framework7-svelte';
   import { mobile } from "../js/functions"
   import pages from "../js/routes"
+  import { page as current_page } from '../js/store';
 
   let page = {
     name:"Home",
