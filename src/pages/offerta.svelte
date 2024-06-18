@@ -14,18 +14,18 @@
   
     <Block strong inset class="pc_center pc_l_width vanta_globe">
       <BlockTitle>Le migliori tecnologie</BlockTitle>
-      RizzoloCloud utilizza una struttura di applicazioni moderna veloce e in cloud per tutti i suoi clienti, per garantirti la massima affidabilità, reperibilità dei dati 
+      RizzoloCloud utilizza una struttura di applicazioni moderna, veloce e in cloud per tutti i suoi clienti, per garantirti la massima affidabilità, reperibilità dei dati 
       e comfort possibile.
     </Block>
 
     <Block strong inset class="pc_center pc_l_width vanta_globe">
         <BlockTitle>Backup giornaliero</BlockTitle>
-        Ti permettiamo di archiviare un backup giornaliero dell'applicazione per assicurarti sempre il dato, anche in caso di perdita.
+        Ti permettiamo di archiviare un backup giornaliero dell'applicazione per assicurarti sempre i tuoi dati, anche in caso di perdita.
     </Block>
   
     <Block strong inset class="pc_center pc_l_width vanta_globe">
         <BlockTitle>Infrastruttura Cloud</BlockTitle>
-        Utilizziamo per tutti i clienti un'infrastruttura cloud su AWS per avere un rapporto qualità/prezzo e velocità nelle richieste dei cliente da poter concorrere con gli
+        Utilizziamo per tutti i clienti un'infrastruttura cloud su AWS per avere un rapporto qualità/prezzo e velocità nelle richieste di modifica e aggiunta al software da poter concorrere con gli
         altri servizi. Inoltre la struttura cloud ti permette di poter avere tutto sempre sotto controllo con la sicurezza dei servizi AWS.
     </Block>
 
@@ -37,7 +37,7 @@
   
     <Block strong inset class="pc_center pc_l_width vanta_globe">
       <BlockTitle>Compatibile con ogni piattaforma</BlockTitle>
-      RizzoloCloud sviluppa applicazioni web che sono compatibili con ogni sistema operativo in formato di applicazione oppure direttamente dal browser.
+      RizzoloCloud sviluppa applicazioni web che sono compatibili con ogni sistema operativo, con mobile e computer in formato di applicazione oppure direttamente dal browser.
     </Block>
   
   </Page>
