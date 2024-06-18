@@ -6,9 +6,16 @@
             <img src="/icons/favicon.png" alt="">
           </NavLeft>
         </Navbar>
-        <List>
+        <List strong inset>
           {#each pages.filter(item=>item.path!="(.*)") as p}
-            <ListItem tabLink link={p.path} title={p.name} view=".view-main" panelClose/>
+            <div class="item">
+              <ListItem tabLink link={p.path} view=".view-main" panelClose>
+                <div class="item-title">
+                  <Icon material={p.icon}/>
+                  {p.name}
+                </div>
+              </ListItem>
+            </div>
           {/each}
         </List>
       </Page>
@@ -23,8 +30,15 @@
         Page,
         Navbar,
         List,
+        Icon,
         ListItem
     } from "framework7-svelte";
     import { mobile } from "../js/functions";
     import pages from "../js/routes"
 </script>
+
+<style>
+  .item{
+    
+  }
+</style>
