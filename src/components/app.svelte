@@ -48,6 +48,7 @@
     f7ready,
     App,
     Panel,
+    Icon,
     View,
     Page,
     Navbar,
