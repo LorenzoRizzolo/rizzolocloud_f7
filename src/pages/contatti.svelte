@@ -4,6 +4,7 @@
     <center>
       <h1 style="margin-bottom: 0;" class="title_font">Rizzolo Cloud</h1>
       <h2 class="title_font margin_0">Contatti</h2>
+      <div><Icon material="contacts" size="50"/></div>
     </center>
   </Block>
 

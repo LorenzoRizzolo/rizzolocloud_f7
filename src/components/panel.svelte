@@ -1,4 +1,4 @@
-<Panel left reveal={!mobile()} dark visibleBreakpoint={960}>
+<Panel right reveal={!mobile()} dark visibleBreakpoint={960}>
     <View>
       <Page>
         <Navbar>

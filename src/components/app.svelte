@@ -2,7 +2,7 @@
   <!-- Top Navbar -->
 
   {#if mobile()}
-    <LeftPanel/>
+    <MenuPanel/>
   {/if}
 
   <!-- Your main view, should have "view-main" class -->
@@ -26,7 +26,7 @@
   
         <NavRight>
           {#if mobile()}
-            <Link iconIos="f7:menu" iconMd="material:menu" panelOpen="left" />
+            <Link iconIos="f7:menu" iconMd="material:menu" panelOpen="right" />
           {/if}
         </NavRight>
     </Navbar>
@@ -59,7 +59,7 @@
     List,
     ListItem
   } from 'framework7-svelte';
-  import LeftPanel from './panel.svelte';
+  import MenuPanel from './panel.svelte';
   import { mobile } from '../js/functions';
   import pages from "../js/routes"
 

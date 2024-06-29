@@ -4,6 +4,7 @@
       <center>
         <h1 style="margin-bottom: 0;" class="title_font">Rizzolo Cloud</h1>
         <h2 class="title_font margin_0">La nostra offerta</h2>
+        <div><Icon material="groups" size="80"/></div>
       </center>
     </Block>
   
